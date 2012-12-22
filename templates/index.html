@@ -1,0 +1,14 @@
+<html !DOCTYPE>
+<head>
+    <title>八皇后</title>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/coffee-script.js') }}"></script>
+</head>
+<body>
+  <input type="text" id="queens" name="queens" value=8>
+  <button id="create_board">创建棋盘</button>
+  </br>
+  <canvas id="Canvas" width=800 height=800></canvas>
+</body>
+<script type="text/coffeescript" src="{{ url_for('static', filename='coffee/client.coffee') }}"></script>
+<html>
